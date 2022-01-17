@@ -1,0 +1,297 @@
+:root {
+  --body-bg-color: #22212c;
+  --text-color: #837e9f;
+  --bg-cards: #302f3d;
+  --bg-techs: #cb92b1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--body-bg-color);
+  color: var(--text-color);
+  font-family: "Merriweather Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.container {
+  max-width: 1450px;
+  margin: 0 auto;
+  padding: 2rem 64px 0;
+
+  display: grid;
+  grid-template-columns: 375px 1fr;
+  gap: -2rem;
+}
+
+.sidebar {
+  width: 90%;
+}
+
+.card {
+  background-color: var(--bg-cards);
+  border-radius: 0.75rem;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* Avatar Container */
+
+.avatar-content {
+  padding: 2.5rem 0;
+
+  text-align: center;
+
+  margin-bottom: 2rem;
+}
+
+.avatar-content span {
+  line-height: 3em;
+  font-size: 0.75rem;
+}
+
+.avatar-img {
+  width: 100px;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 16px;
+}
+
+/* Details */
+
+.person-details {
+  padding: 2.5rem 0 2.5rem 2rem;
+  margin-bottom: 2rem;
+}
+
+.person-details p {
+  font-size: 0.75rem;
+}
+
+.avatar-content .avatar-img {
+  border: 2px solid #00ff00;
+}
+
+.details-item {
+  display: flex;
+  align-items: center;
+}
+
+.details-item + .details-item {
+  margin-top: 1rem;
+}
+
+.details-item img {
+  margin-right: 1rem;
+}
+
+/*  Technologies */
+
+.technologies {
+  padding: 1.5rem 1rem;
+  margin-bottom: 2rem;
+}
+
+.technologies > h3 {
+  padding-left: 0.25rem;
+}
+
+.btn-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+  padding: 0 0.9rem;
+
+  margin-top: 1.5rem;
+  width: 100%;
+}
+
+.btn-container button {
+  padding: 0.25rem 0;
+  border-radius: 1rem;
+  background-color: var(--bg-techs);
+  border-color: var(--bg-techs);
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+}
+
+/* Exp */
+
+.experiences {
+  padding: 2.5rem 0;
+  margin-bottom: 2rem;
+}
+
+.experiences > h3 {
+  padding-left: 1rem;
+  margin-bottom: 1rem;
+}
+
+.experiences > ul {
+  padding: 0 4rem;
+  line-height: 1.25rem;
+}
+
+.experiences > ul p {
+  font-size: 0.85rem;
+}
+
+/* Education */
+
+.education {
+  padding: 2.5rem 0;
+  margin-bottom: 2rem;
+}
+
+.education > h3 {
+  padding-left: 1rem;
+  margin-bottom: 1rem;
+}
+
+.education > ul {
+  padding: 0 4rem;
+  line-height: 1.25rem;
+}
+
+.education > ul > li {
+  margin-bottom: 1rem;
+}
+
+.education > ul > li > p {
+  font-size: 0.85rem;
+}
+
+/* Main section */
+
+.myproject-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 1.75rem;
+
+  margin-bottom: 2rem;
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+
+  margin-bottom: 2rem;
+}
+
+.project {
+  padding: 1.5rem;
+}
+
+.project-title {
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 1rem;
+}
+
+.project-title > img {
+  margin-right: 1rem;
+}
+
+.project > p {
+  margin-bottom: 1rem;
+  font-size: 0.85rem;
+  line-height: 1.25rem;
+}
+
+.project > span {
+  font-size: 0.75rem;
+}
+
+.highlight-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.highlight {
+  display: flex;
+  align-items: center;
+}
+
+.highlight > span {
+  display: flex;
+  align-items: center;
+  font-size: 0.75rem;
+}
+
+.highlight > span + span {
+  margin-left: 1rem;
+  
+}
+
+.highlight > span > img {
+  margin-right: .5rem;
+}
+
+.lang-container {
+  display: flex;
+  align-items: center;
+  font-size: 0.75rem;
+}
+
+.color-lang {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #E7DE79;
+  border: 3px solid #837E9F;
+  margin-right: .5rem;
+}
+
+.recent-posts-container {
+  padding: 1.75rem;
+  margin-bottom: 2rem;
+}
+
+.recent-post {
+  padding: 1.75rem;
+  display: flex;
+  align-items: center;
+}
+
+.post-content {
+  margin-left: 2rem;
+}
+
+.post-content > .post-header {
+  margin-bottom: 2rem;
+}
+
+.post-content > .post-header > h3 {
+  margin-bottom: .5rem;
+}
+
+.post-content > .post-body > p {
+  margin-bottom: 1.25rem;
+  font-size: 1rem;
+}
+
+.post-content > .post-body > .techs-relation > span + span {
+  margin-left: 1rem;
+  font-size: .85rem;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem 0;
+}
+
+button {
+  cursor: pointer;
+}

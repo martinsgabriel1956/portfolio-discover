@@ -1,50 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./public/styles.css">
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;700&display=swap" rel="stylesheet">
     <title>Portfólio</title>
   </head>
   <body>
     <main class="container">
       <section class="sidebar">
-        <div class="avatar-content">
-          <img src="https://github.com/martinsgabriel1956.png" alt="Avatar do usuário" />
-          <h4>Gabriel Martins</h4>
-          <p>Full Stack Developer</p>
+        <div class="card avatar-content">
+          <img class="avatar-img" src="https://github.com/martinsgabriel1956.png" alt="Avatar do usuário" />
+          <h3>Gabriel Martins</h3>
+          <span>Full Stack Developer</span>
         </div>
-        <div class="person-details">
-          <p>
+        <div class="card person-details">
+          <p class="details-item">
             <img src="./assets/map-pin.svg" alt="Map Pin Icon" />
             Brasil
           </p>
-          <p>
+          <p class="details-item">
             <img src="./assets/briefcase.svg" alt="BriefCase Icon" />
             Luby Software
           </p>
-          <p>
+          <p class="details-item">
             <img src="./assets/github.svg" alt="Github Icon" />
             martinsgabriel1956
           </p>
-          <p>
+          <p class="details-item">
             <img src="./assets/linkedin.svg" alt="LinkedIn Icon" />
             gabriel-castro-da-silva-martins
           </p>
-          <p>
+          <p class="details-item">
             <img src="./assets/twitter.svg" alt="Twitter Icon" />
             martinsbiel99
           </p>
-          <p>
+          <p class="details-item">
             <img src="./assets/globe.svg" alt="Globe Icon" />
             https://martinsbiel1956.com
           </p>
-          <p>
+          <p class="details-item">
             <img src="./assets/mail.svg" alt="Mail Icon" />
             martinsgabriel1956@gmail.com
           </p>
         </div>
-        <div class="tecnologies">
+        <div class="card technologies">
           <h3>Tecnologias</h3>
           <div class="btn-container">
             <button>Javascript</button>
@@ -58,7 +63,7 @@
             <button>React Native</button>
           </div>
         </div>
-        <div class="experiences">
+        <div class="card experiences">
           <h3>Experiências</h3>
           <ul>
             <li>
@@ -68,7 +73,8 @@
             </li>
           </ul>
         </div>
-        <div class="education">
+        <div class="card education">
+          <h3>Educação</h3>
           <ul>
             <li>
               <h4>Senac</h4>
@@ -89,44 +95,83 @@
         </div>
       </section>
       <section class="main-content">
-        <div>
+        <div class="card myproject-container">
           <h3>MyProjects</h3>
-          <button>Veja todos</button>
+          <a href="">Veja todos</a>
         </div>
-        <div>
-          <div>
-            <h5>
+        <div class="projects-container">
+          <div class="card project">
+            <h5 class="project-title">
               <img src="./assets/folder.svg" alt="" />
+              Projeto 1
             </h5>
-            <p></p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae earum commodi explicabo!</p>
+            <div class="highlight-container" >
+             <div class="highlight">
+                <span>
+                  <img src="./assets/star.svg" alt="" />
+                  100
+                </span>
+                <span>
+                  <img src="./assets/git-branch.svg" alt="" />
+                  300
+                </span>
+             </div>
+              <div class="lang-container">
+                <div class="color-lang"></div>
+                Javascript
+              </div>
+            </div>
             <div>
-              <span><img src="./assets/star.svg" alt="" /></span>
-              <span><img src="./assets/git-branch.svg" alt="" /></span>
-
-              <div><span></span></div>
             </div>
           </div>
-          <div>
-            <h5>
+          <div class="card project">
+            <h5 class="project-title">
               <img src="./assets/folder.svg" alt="" />
+              Projeto 1
             </h5>
-            <p></p>
-            <div>
-              <span><img src="./assets/star.svg" alt="" /></span>
-              <span><img src="./assets/git-branch.svg" alt="" /></span>
-
-              <div><span></span></div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae earum commodi explicabo!</p>
+            <div class="highlight-container" >
+             <div class="highlight">
+                <span>
+                  <img src="./assets/star.svg" alt="" />
+                  100
+                </span>
+                <span>
+                  <img src="./assets/git-branch.svg" alt="" />
+                  300
+                </span>
+             </div>
+              <div class="lang-container">
+                <div class="color-lang"></div>
+                Javascript
+              </div>
             </div>
-        </div>
-        <div>
-          <h3>Recent Posts</h3>
-        </div>
-        <div>
-          <div>
-            <img src="https://github.com/martinsgabriel1956.png" alt="">
+            <div>
+            </div>
           </div>
-          <div>
-
+        </div>
+      </div>
+      <div class="card recent-posts-container">
+        <h3>Recent Posts</h3>
+      </div>
+      <div class="card recent-post">
+        <div>
+          <img class="avatar-img" src="https://github.com/martinsgabriel1956.png" alt="">
+        </div>
+        <div class="post-content">
+          <div class="post-header">
+            <h3>React Custom Hooks</h3>
+            <p>1 ano atrás</p>
+          </div>
+          <div class="post-body">
+            <p>React Custom Hooks</p>
+            <div class="techs-relation">
+              <span>#react</span>
+              <span>#typescript</span>
+              <span>#javascript</span>
+              <span>#react-native</span>
+            </div>
           </div>
         </div>
       </section>
