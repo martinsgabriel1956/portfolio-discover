@@ -191,6 +191,7 @@ a {
 
 .project {
   padding: 1.5rem;
+  cursor: pointer;
 }
 
 .project-title {
@@ -263,6 +264,13 @@ a {
   padding: 1.75rem;
   display: flex;
   align-items: center;
+
+  cursor: pointer;
+}
+
+.recent-post:hover {
+  opacity: .9;
+  transition: opacity 0.5s;
 }
 
 .post-content {
